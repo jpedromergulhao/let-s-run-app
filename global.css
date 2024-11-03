@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mapDetails {
+    height: 300px;
+    background-color: #ccc;
+}
+
+.btn-primary {
+    --bs-btn-color: black;
+    --bs-btn-bg:#ccc;
+    --bs-btn-border-color: #ccc;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: gray;
+    --bs-btn-hover-border-color: gray;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #black;
+    --bs-btn-active-bg: gray;
+    --bs-btn-active-border-color: dark;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: black;
+    --bs-btn-disabled-bg: #ccc;
+    --bs-btn-disabled-border-color: #ccc;
+}
+
+i{
+    .anton-regular {
+        font-family: "Anton", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+      }
+}
+
+#bg-index{
+    background-image: url(./images/App\ logo.png);
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position-y: -75%;
+    background-position-x: 50%;
+}
+
+.color{
+    color: #ccc;
+}
