@@ -2,10 +2,12 @@ const rideListElement = document.querySelector("#rideList");
 const allRides = getAllRides();
 
 allRides.forEach(async ([id, value]) => {
-    const ride = JSON.parse(value);
-    ride.id = id;
+    console.log(value);
+    try {
+        const ride = JSON.parse(value);
+        ride.id = id;
 
-    const itemElement = document.createElement("li");
+        const itemElement = document.createElement("li");
     itemElement.id = ride.id;
     itemElement.className = "d-flex p-1 align-items-center justify-content-between shadow-sm gap-3"
 
@@ -77,6 +79,10 @@ allRides.forEach(async ([id, value]) => {
         L.marker([firstPosition.latitude, firstPosition.longitude]).addTo(map);
     } else {
         console.error(`No data available for ride with id ${id}`);
+    }
+    } catch (error) {
+        console.error(`Error parsing JSON for ride with id ${id}:`, error, "Value:", value);
+        return; 
     }
 
 });
