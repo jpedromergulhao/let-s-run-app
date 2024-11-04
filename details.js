@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const deleteButton = document.querySelector("#deleteBtn")
     deleteButton.addEventListener("click", () => {
         deleteRide(rideID);
-        window.location.href = "./"
+        window.location.href = "./run.html"
     })
 
     const map = L.map("mapDetails");

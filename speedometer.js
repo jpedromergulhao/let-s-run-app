@@ -40,7 +40,7 @@ stopBtn.addEventListener("click", () => {
     startBtn.classList.remove("d-none");
     stopBtn.classList.add("d-none");
 
-    window.location.href = "./"
+    window.location.href = "./run.html"
 });
 
 //hour
